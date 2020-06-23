@@ -1,0 +1,374 @@
+@import url("https://use.typekit.net/uoo5tjb.css");
+
+/* petit-formal-script-regular - latin */
+@font-face {
+  font-family: "Petit Formal Script";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Petit Formal Script"), local("PetitFormalScript-Regular"),
+    url("../fonts/petit-formal-script-v7-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/petit-formal-script-v7-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/roboto-slab-v11-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-slab-v11-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-slab-700 - latin */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""),
+    url("../fonts/roboto-slab-v11-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-slab-v11-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* adamina-regular - latin; This is additional font in case "Droid Serif" is unavailable*/
+@font-face {
+  font-family: "Adamina";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Adamina Regular"), local("Adamina-Regular"),
+    url("../fonts/adamina-v13-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/adamina-v13-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+*::before,
+*::after {
+  display: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 2;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+h2,
+h3,
+p {
+  margin: 0px auto;
+  padding: 0px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 940px;
+  margin: 0px auto;
+}
+
+:root {
+  --logo-font: "Petit Formal Script", serif;
+  --title-font: "Montserrat", sans-serif;
+  --title-description-font: "Droid Serif", "Adamina", serif;
+  --services-description-font: "Roboto Slab", serif;
+}
+
+.page-header {
+  padding: 36px 0px 103px;
+}
+
+.page-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.logo {
+  font-family: var(--logo-font);
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 41px;
+  color: rgb(254, 209, 54);
+  flex-basis: 87px;
+}
+
+.menu-list-item-link {
+  font-family: var(--title-font);
+  font-size: 14px;
+  line-height: 41px;
+  font-weight: 700;
+  color: rgb(34, 34, 34);
+  text-transform: uppercase;
+}
+
+.menu-list-item-link:hover {
+  color: rgb(254, 209, 54);
+}
+
+.menu-list {
+  flex-basis: 482px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.services {
+  padding-bottom: 116px;
+}
+
+.main-title {
+  font-family: var(--title-font);
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.services-title {
+  line-height: 75px;
+  color: rgb(34, 34, 34);
+  margin-bottom: 4px;
+}
+
+.title-description {
+  font-family: var(--title-description-font);
+  font-size: 16px;
+  font-style: italic;
+  color: rgb(119, 119, 119);
+  text-align: center;
+}
+
+.services > .title-description {
+  margin-bottom: 78px;
+}
+
+.services-description-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.e-commerce::before {
+  content: "";
+  margin: 0px auto;
+  width: 72px;
+  height: 71px;
+  border: 3px solid rgb(254, 209, 54);
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  background-image: url("../img/ecommerce.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.web::before {
+  content: "";
+  margin: 0px auto;
+  width: 72px;
+  height: 71px;
+  border: 3px solid rgb(254, 209, 54);
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  background-image: url("../img/web.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.security::before {
+  content: "";
+  margin: 0px auto;
+  width: 72px;
+  height: 71px;
+  border: 3px solid rgb(254, 209, 54);
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  background-image: url("../img/security.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services-description-title {
+  font-family: var(--title-font);
+  font-size: 18px;
+  line-height: 75px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  width: 300px;
+}
+
+.services-description {
+  font-family: var(--services-description-font);
+  font-size: 14px;
+  color: rgb(119, 119, 119);
+  text-align: center;
+  width: 300px;
+}
+
+.contact-us {
+  padding: 108px 0px 114px;
+  background-color: rgb(34, 34, 34);
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-position: right bottom 18px;
+}
+
+.contact-us-title {
+  color: rgb(255, 255, 255);
+  margin-bottom: 24px;
+}
+
+.contact-us-wrapper > .title-description {
+  margin-bottom: 74px;
+}
+
+.contact-us-form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 28px;
+}
+
+.contact-us-user-info-wrapper {
+  width: 459px;
+}
+
+.contact-us-user-info {
+  box-sizing: border-box;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  width: 459px;
+  height: 52px;
+  padding: 10px 21px;
+}
+
+.contact-us-user-info:not(:last-child) {
+  margin-bottom: 34px;
+}
+
+.contact-us-user-info::placeholder,
+.contact-us-user-msg::placeholder {
+  font-family: var(--title-font);
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(187, 187, 187);
+  text-transform: uppercase;
+}
+
+.contact-us-user-msg-wrapper {
+  box-sizing: border-box;
+  width: 459px;
+}
+
+.contact-us-user-msg {
+  box-sizing: border-box;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  width: 459px;
+  padding: 18px 20px;
+  resize: none;
+}
+
+.contact-us-user-info,
+.contact-us-user-msg-wrapper {
+  font-family: var(--title-font), sans-serif;
+  font-size: 16px;
+  color: rgb(51, 51, 51);
+}
+
+.contact-us-user-info:focus {
+  outline: none;
+}
+
+.contact-us-user-info:required:focus:valid:not(:placeholder-shown) {
+  outline: 3px solid #32cd32;
+}
+
+.contact-us-user-info:required:focus:invalid:not(:placeholder-shown) {
+  outline: 3px solid #ff0000;
+}
+
+.contact-us-user-msg:required:focus:valid:not(:placeholder-shown) {
+  outline: 3px solid #32cd32;
+}
+
+.contact-us-user-msg:required:focus:invalid:not(:placeholder-shown) {
+  outline: 3px solid #ff0000;
+}
+
+.send-msg-btn {
+  display: block;
+  margin: 0px auto;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(254, 209, 54);
+  width: 240px;
+  height: 66px;
+  font-family: var(--title-font);
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
